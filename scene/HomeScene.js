@@ -11,9 +11,9 @@ import CreditShopScene from './CreditShopScene';
 import MyDollScene from './MyDollScene';
 import MineScene from './MineScene';
 
-export default class HomeNavigator extends Component{
-    render(){
-        const Tabs =TabNavigator(
+export default class HomeNavigator extends Component {
+    render() {
+        const Tabs = TabNavigator(
             //navigator 的 item
             {
                 HomePage: {
@@ -23,7 +23,7 @@ export default class HomeNavigator extends Component{
                         tabBarIcon: ({tintColor}) => (
                             <Image
                                 source={require('../image/navigator_main_select.png')}
-                                style={[{height: 24, width: 24}, {tintColor: tintColor}]}
+                                style={[styles.tabBarImage, {tintColor: tintColor}]}
                             />
                         ),
                     },
@@ -35,7 +35,7 @@ export default class HomeNavigator extends Component{
                         tabBarIcon: ({tintColor}) => (
                             <Image
                                 source={require('../image/navigator_creditshop_select.png')}
-                                style={[{height: 24, width: 24}, {tintColor: tintColor}]}
+                                style={[styles.tabBarImage, {tintColor: tintColor}]}
                             />
                         ),
                     },
@@ -47,7 +47,7 @@ export default class HomeNavigator extends Component{
                         tabBarIcon: ({tintColor}) => (
                             <Image
                                 source={require('../image/navigator_mydoll_select.png')}
-                                style={[{height: 24, width: 24}, {tintColor: tintColor}]}
+                                style={[styles.tabBarImage, {tintColor: tintColor}]}
                             />
                         ),
                     },
@@ -59,7 +59,7 @@ export default class HomeNavigator extends Component{
                         tabBarIcon: ({tintColor}) => (
                             <Image
                                 source={require('../image/navigator_my_select.png')}
-                                style={[{height: 24, width: 24}, {tintColor: tintColor}]}
+                                style={[styles.tabBarImage, {tintColor: tintColor}]}
                             />
                         ),
                     },
@@ -94,20 +94,20 @@ export default class HomeNavigator extends Component{
 }
 
 
-
 const styles = StyleSheet.create({
     tabBarImage: {
-        width: 2,
-        height: 2,
+        width: 22,
+        height: 22,
+        marginTop: 7,
     },
     tabBar: {
         backgroundColor: 'white',
     },
     tabBarLabel: {
-        fontSize: 12,
+        fontSize: 9,
     },
     tabBarItem: {
-        height: 56,
+        height: 47,
     },
 })
 
