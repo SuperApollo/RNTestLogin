@@ -15,13 +15,52 @@ import {
   Text,
   View,
   TextInput,
-  Button,
   Alert,
   Image,
   TouchableOpacity,
   ToastAndroid,
 } from 'react-native';
-import HomeScene from './HomeScene';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  img: {
+    width: 30,
+    height: 30,
+  },
+  input: {
+    width: 200,
+    height: 40,
+    color: '#fff', // 输入框输入的文本为白色
+  },
+  inputBox: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 280,
+    height: 50,
+    borderRadius: 8,
+    backgroundColor: '#66f',
+    marginBottom: 8,
+  },
+  button: {
+    height: 50,
+    width: 280,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8,
+    backgroundColor: '#66f',
+    marginBottom: 8,
+  },
+  btText: {
+    color: '#fff',
+    fontWeight: 'bold', // 粗体
+  },
+});
 
 export default class App extends Component {
     userName = '';
@@ -40,7 +79,7 @@ export default class App extends Component {
 
     // 登录
     doLogin = () => {
-      if (this.userName == 'admin' && this.passWord == '123') {
+      if (this.userName === 'admin' && this.passWord === '123') {
         // ToastAndroid.show(this.userName + '登录成功!', ToastAndroid.SHORT);
         ToastAndroid.show(`${this.userName}登录成功!`, ToastAndroid.SHORT);
         const { navigate } = this.props.navigation;
@@ -116,45 +155,4 @@ export default class App extends Component {
       );
     }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  img: {
-    width: 30,
-    height: 30,
-  },
-  input: {
-    width: 200,
-    height: 40,
-    color: '#fff', // 输入框输入的文本为白色
-  },
-  inputBox: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 280,
-    height: 50,
-    borderRadius: 8,
-    backgroundColor: '#66f',
-    marginBottom: 8,
-  },
-  button: {
-    height: 50,
-    width: 280,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 8,
-    backgroundColor: '#66f',
-    marginBottom: 8,
-  },
-  btText: {
-    color: '#fff',
-    fontWeight: 'bold', // 粗体
-  },
-});
 

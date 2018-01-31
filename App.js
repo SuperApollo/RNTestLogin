@@ -7,7 +7,6 @@
  * @flow
  */
 
-import React from 'react';
 import { StackNavigator } from 'react-navigation'; // 1.0.0-beta.14
 import LoginScene from './scene/LoginScene';
 import WelcomeScene from './scene/WelcomeScene';

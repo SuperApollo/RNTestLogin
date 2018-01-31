@@ -9,6 +9,16 @@ import {
   StyleSheet,
 } from 'react-native';
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  txt: {
+    fontWeight: 'bold',
+  },
+});
 
 export default class HomeScene extends Component {
   render() {
@@ -22,14 +32,3 @@ export default class HomeScene extends Component {
   }
 }
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  txt: {
-    fontWeight: 'bold',
-  },
-});
