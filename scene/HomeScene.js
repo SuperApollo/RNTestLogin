@@ -83,8 +83,6 @@ export default class HomeNavigator extends Component {
                     upperCaseLabel: false,
 
                 },
-                height: 30,
-                backgroundColor: '#fafafa',
             }
         )
         return (
@@ -96,12 +94,13 @@ export default class HomeNavigator extends Component {
 
 const styles = StyleSheet.create({
     tabBarImage: {
-        width: 22,
-        height: 22,
-        marginTop: 7,
+        width: 20,
+        height: 20,
+        justifyContent:'center',
+        alignItems:'center',
     },
     tabBar: {
-        backgroundColor: 'white',
+        backgroundColor: '#fafafa',
     },
     tabBarLabel: {
         fontSize: 9,
