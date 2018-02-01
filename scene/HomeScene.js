@@ -15,8 +15,7 @@ const styles = StyleSheet.create({
   tabBarImage: {
     width: 20,
     height: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginVertical: 15,
   },
   tabBar: {
     backgroundColor: '#fafafa',
