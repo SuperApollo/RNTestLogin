@@ -15,16 +15,17 @@ const styles = StyleSheet.create({
   tabBarImage: {
     width: 20,
     height: 20,
-    marginVertical: 15,
   },
   tabBar: {
     backgroundColor: '#fafafa',
+    height: 47,
   },
   tabBarLabel: {
     fontSize: 9,
+    margin: 5,
   },
   tabBarItem: {
-    height: 47,
+
   },
 });
 
