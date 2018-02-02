@@ -22,10 +22,9 @@ const styles = StyleSheet.create({
   },
   tabBarLabel: {
     fontSize: 9,
-    margin: 5,
+    margin: 0,
   },
   tabBarItem: {
-
   },
 });
 
